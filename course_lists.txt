@@ -1,0 +1,406 @@
+
+-=-=-=-=-=-=-    Data Science and Statistics    -=-=-=-=-=-=-
+start: Dec 25 2024
+
+Tut chapterwise
+Used ChatGPT Heavily (use multiple account for free tier)
+Use:
+	Notes (PDFs)
+	Datasets (excel, csv)
+	SRT+HTML
+
+
+Course list:
+    
+    ----  Statistics  ----
+    1. Stat for Business Analytics and DS (7h - combine with 2)
+    2. Stat for DS and Business Analysis: 4h 20-min (start from here)
+    
+    ----  Data Science  ----
+    3. DS Bootcamp (24h 34min skip known. EG: python. For ML-DL note only new)
+    4. DS A-Z (21h 9min: DS starts from here- combine with 3)
+    5. IBM Data Analytics (15h 41min)
+
+    ----  visualization  ----
+    6. Tableau (7h 30min)
+    7. PowerBI (4h 21min)
+
+
+
+----  Important Topics in Statistics for Data Science:  ----
+	Descriptive Statistics
+	Probability Theory
+	Probability Distributions
+	Sampling and Sampling Distribution
+	Inferential Statistics
+	Hypothesis Testing
+	Linear Regression
+	Correlation vs. Causation
+	ANOVA (Analysis of Variance)
+	Bayesian Statistics
+	Confidence Intervals
+	Statistical Tests (e.g., t-test, chi-square test)
+	Central Limit Theorem
+	Data Visualization Techniques
+	Dimensionality Reduction (e.g., PCA)
+	Time Series Analysis
+	Statistical Significance
+	Experimental Design and A/B Testing
+	Multivariate Statistics
+	Non-Parametric Methods
+
+
+
+
+=================================================================
+2. Stat for DS and Business Analysis: 4h 20-min (start from here)
+=================================================================
+
+topics:
+	import the playlist
+
+use: 
+	lectures srt
+	Course Notes
+	Excercise files -> additional info included
+	PDF materials
+	nootbook files
+
+
+------------  Part 1: Basics, descriptive statistics  ------------
+1.01 Types of Data
+1.02 Population and Sample
+1.03 Levels of measurement
+1.04 Categorical and numerical variables 
+1.05 Visualization techniques for categorical variables
+1.06 Numerical variables
+1.07 Using a frequency distribution table
+1.08 Histogram charts
+1.09 Cross tables and scatter plots
+
+1.10 The main measures of central tendency, mean, median, mode
+1.11 Measuring skewness
+1.12 Measuring how data is spread out
+1.13 calculating variance: quantify variablility
+1.14 Standard deviation and coefficient of variation
+1.15 Calculating and understanding covariance
+1.16 The correlation coefficient
+
+1.17 Practical example: descriptive statistics
+
+
+------------  Part 2: inferential statistics  ------------
+focused on Central limit theorem
+
+2.01 Introduction to inferential statistics
+2.02 What is a distribution
+2.03 The Normal distribution
+2.04 The standard normal distribution
+2.05 Understanding the central limit theorem
+2.06 Standard error
+
+2.07 Working with estimators and estimates
+2.08 Confidence intervals - an invaluable tool for decision making
+2.09 Calculating confidence intervals within a population with a known variance
+2.10 Student's T distribution
+2.11 Prediction under uncertainty
+2.12 Calculating confidence intervals within a population with an unknown variance
+2.13 What is a margin of error and why is it important in Statistics
+
+2.14 confidence intervals
+2.15 Practical example_ inferential statistics
+
+
+------------  Part 3: hypothesis testing  ------------
+hypothesis testing is the Heart of decision making
+
+3.01 The null and the alternative hypothesis
+3.02 Establishing a rejection region and a significance level
+3.03 Type I error vs Type II error
+
+3.04 Test for the mean: Population variance known
+3.05 What is the p-value and why is it one of the most useful tool for statisticians_
+3.06 Test for the mean: Population variance unknown
+3.07 Test for the mean: Dependent samples
+3.08 Test for the mean: Independent samples
+
+3.09 Example hypothesis testing
+
+
+------------  Part 4: regression analysis  ------------
+regression analysis used For Predictive models & causual relationships
+OLS setting is the widely used framewark for statistics regression
+
+4.01 Introduction to regression analysis
+4.02 Correlation and causation
+4.03 The linear regression model made easy
+4.04 What is the difference between correlation and regression
+4.05 A geometrical representation of the linear regression model
+4.06 A practical example - Reinforced learning
+
+4.07 Decomposing the linear regression model - understanding its nuts and bolts
+4.08 What is R-squared and how does it help us
+4.09 The ordinary least squares setting and its practical applications
+4.10 Studying regression tables
+4.11 The multivariate linear regression model
+4.12 Adjusted R-squared
+4.13 What does the F-statistic show us and why we need to understand it
+
+4.14 OLS assumptions
+4.15 Linearity
+4.16 No endogeneity
+4.17 Normality and homoscedasticity
+4.18 No autocorrelation
+4.19 No multicollinearity
+
+4.20 Dealing with categorical data: Dummy variables
+4.21 Regressin example
+
+
+
+
+===========================================================
+1. Stat for Business Analytics and DS (7h - combine with 2)
+===========================================================
+
+1.01 Welcome
+1.02 Plan of Attack
+1.03 Updates on Udemy Reviews
+1.04 Continuous vs Discrete
+1.05 What is a Distribution
+1.06 What is Standard Deviation
+1.07 Normal Distribution
+1.08 Skewness
+1.09 Mean, Median, Mode
+1.10 Homework
+1.11 Homework Solution - Part l
+1.12 Homework Solution - Part 2
+1.13 EXTRA Cantors Diagonal Argument
+
+
+2.01 Plan of Attack
+2.02 Populations and Samples
+2.03 Sampling Distribution
+2.04 Central Limit Theorem
+2.05 Central Limit Theorem - Intuition
+2.06 Central Limit Theorem - Visualization
+2.07 Z-Score
+2.08 Hands-On CLT - Analytics Challenge
+2.09 Homework
+2.10 Homework Solution
+
+
+3.01 Plan of Attack
+3.02 Hypothesis Testing -Steps
+3.03 Statistical Significance
+3.04 Hypothesis Testing - Rejection Region
+3.05 Hypothesis Testing Assumptions
+3.06 Proportion Testing
+3.07 Homework
+3.08 Homework Solution
+
+
+4.01 What it means when you cannot reject the Null Hypothesis
+4.02 Students t-disbribution
+4.03 T-Tests
+4.04 1-Tailed And 2-Tailed Tests
+4.05 2-Tailed Test Exercise
+4.06 Warning about misuse and overuse of p-values
+4.07 Real Life Example
+4.08 THANK YOU bonus video
+
+
+5.01 Pareto Principle - Part l
+5.02 Pareto Principle - Part 2
+5.03 Pareto Principle - Part 3
+5.04 Trends in Analytics - Part l
+5.05 Trends in Analytics - Part 2
+
+
+
+
+==========================================================
+3. DS Bootcamp (24h 34min skip known. EG: python & ML-DL )
+==========================================================
+
+------------    Part 1 Introduction    ------------
+
+        A Practical Example What You Will Learn in This Course
+        What does the course cover
+
+02. The Field of Data Science - The Various Data Science Disciplines
+        01. Data Science and Business Buzzwords Why are there so many.
+        02. What is the difference between Analysis and Analytics
+        03. Business Analytics, Data Analytics, and Data Science An Introduction.
+        04. Continuing with BI, ML, and AI
+        05. A Breakdown of our Data Science Infographic
+
+03. The Field of Data Science
+        Connecting the Data Science Disciplines:
+            Applying Traditional Data, Big Data, BI, Traditional Data Science and ML
+        
+        The Benefits of Each Discipline:
+            The Reason behind these Disciplines
+
+        Popular Data Science Techniques:
+		    01. Techniques for Working with Traditional Data
+                Real Life Examples of Traditional Data
+
+            02. Techniques for Working with Big Data
+                Real Life Examples of Big Data
+
+            03. Business Intelligence (BI) Techniques
+                Real Life Examples of Business Intelligence (BI)
+
+            04. Techniques for Working with Traditional Methods
+                Real Life Examples of Traditional Methods
+            
+            05. Machine Learning (ML) Techniques.
+                Types of Machine Learning
+                Real Life Examples of Machine Learning (ML)
+
+        Popular Data Science Tools:
+            Necessary Programming Languages and Software Used in Data Science
+        
+        Careers in Data Science:
+            Finding the Job - What to Expect and What to Look for
+
+        Debunking Common Misconceptions:
+            Debunking Common Misconceptions
+
+
+
+------------    Part 2 Probability    ------------
+
+10. Combinatorics
+        01. Fundamentals of Combinatorics
+        02. Permutations and How to Use Them
+        03. Simple Operations with Factorials
+        04. Solving Variations:
+            with Repetition
+            without Repetition
+        05. Solving Combinations
+        06. Symmetry of Combinations
+        07. Solving Combinations with Separate Sample Spaces
+        08. Combinatorics in Real-Life The Lottery
+        09. A Recap of Combinatorics
+        10. A Practical Example of Combinatorics
+
+
+11. Bayesian Inference
+        01. Sets and Events
+        02. Ways Sets Can Interact
+        03. Intersection of Sets
+        04. Union of Sets
+        05. Mutually Exclusive Sets
+        06. Dependence and Independence of Sets
+        07. The Conditional Probability Formula
+        08. The Law of Total Probability
+        09. The Additive Rule
+        10. The Multiplication Law
+        11. Bayes' Law
+
+
+12. Probability Distributions
+        01. Fundamentals of Probability Distributions
+        02. Types of Probability Distributions
+
+        03. Characteristics of Discrete Distributions
+        04. Discrete Distributions:
+            Uniform Distribution
+            Bernoulli Distribution
+            Binomial Distribution
+            Poisson Distribution
+
+        05. Characteristics of Continuous Distributions
+        06. Continuous Distributions:
+            Normal Distribution
+            Standard Normal Distribution
+            Students' T Distribution
+            Chi-Squared Distribution
+            Exponential Distribution
+            Logistic Distribution
+
+
+13. Probability in Other Fields
+        01. Probability in Finance
+        02. Probability in Statistics
+        03. Probability in Data Science
+
+
+
+------------    Part 2 Statistics    ------------
+
+15. Statistics - Descriptive Statistics
+        01. Population and Sample
+        02. Types of Data
+        03. Levels of Measurement
+        04. Categorical Variables - Visualization Techniques
+        05. Numerical Variables - Frequency Distribution Table
+        06. The Histogram
+        07. Cross Tables and Scatter Plots
+        08. Mean, median and mode
+        09. Skewness
+        10. Variance
+        11. Standard Deviation and Coefficient of Variation
+        12. Covariance
+        13. Correlation Coefficient
+        14. Practical Example Descriptive Statistics
+
+
+17. Statistics - Inferential Statistics Fundamentals
+        01. Introduction
+        02. What is a Distribution
+        03. The Normal Distribution
+        04. The Standard Normal Distribution
+        05. Central Limit Theorem
+        06. Standard error
+        07. Estimators and Estimates
+
+
+18. Statistics - Inferential Statistics Confidence Intervals
+        01. What are Confidence Intervals
+        02. Confidence Intervals; Population Variance Known; z-score
+        03. Confidence Interval Clarifications
+        04. Student's T Distribution
+        05. Confidence Intervals; Population Variance Unknown; t-score
+        06. Margin of Error
+        07. Confidence intervals- Two means:
+                Dependent samples
+                Independent samples
+        08. Practical Example Inferential Statistics
+
+
+20. Statistics - Hypothesis Testing
+        01. Null vs Alternative Hypothesis
+        02. Rejection Region and Significance Level
+        03. Type I Error and Type II Error
+        04. Test for the Mean. Population Variance Known
+        05. p-value
+        06. Test for the Mean:
+                Population Variance Unknown
+                Dependent Samples
+                Independent samples
+        07. Practical Example Hypothesis Testing
+
+
+
+
+
+
+
+
+========
+DS A-Z
+========
+DS-part starts from here. Also "pre-DS" do it from this course
+--------------------------------------------------------------
+
+Intro what you will learn in this section
+Types of variables Categorical vs Numeric
+Types of regressions
+Ordinary Least Squares
+Rsquared
+Adjusted R
+
+
