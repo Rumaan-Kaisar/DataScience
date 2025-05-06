@@ -130,3 +130,77 @@ plt.tight_layout()
 plt.show()
 
 
+
+# ----------------------  Histogram  ----------------------
+
+import matplotlib.pyplot as plt
+
+# Data
+dataset = [1, 9, 22, 24, 32, 33, 41, 44, 57, 66, 70, 
+           73, 75, 76, 79, 82, 87, 89, 95, 100]
+
+# Define equal-width bins (1–20, 21–40, ..., 81–100)
+bins = [1, 20, 40, 60, 80, 100]
+
+# Plot
+plt.figure(figsize=(8, 5))
+plt.hist(dataset, bins=bins, color="#00c4b0", edgecolor="white", linewidth=1.2, rwidth=1.0)
+
+# Labels and title
+plt.xlabel("Value Ranges", fontsize=12)
+plt.ylabel("Frequency", fontsize=12)
+plt.title("Histogram of Dataset", fontsize=14, color="#007fff", pad=15)
+
+# Gridlines
+plt.grid(axis='y', linestyle='--', linewidth=0.6, alpha=0.7, color="#6d9bc3")
+
+# Minimalist styling
+for spine in plt.gca().spines.values():
+    spine.set_visible(False)
+
+plt.tight_layout()
+plt.show()
+
+
+# NOTE: if bin widths are equal, setting "density=True" is enough to make it a relative frequency-style plot
+plt.hist(dataset, bins=bins, density=True, color="#ffa600", edgecolor="white", linewidth=1.2, rwidth=1.0)
+
+
+
+# ----------------------  Histogram: Absolute vs Relative Frequency  ----------------------
+import matplotlib.pyplot as plt
+
+# Data
+dataset = [1, 9, 22, 24, 32, 33, 41, 44, 57, 66, 70, 
+           73, 75, 76, 79, 82, 87, 89, 95, 100]
+
+# Define bins: 1–20, 21–40, ..., 81–100 (extend to 101 to include 100)
+bins = [1, 20, 40, 60, 80, 100]
+
+# Create subplots (NO sharey=True)
+fig, axs = plt.subplots(1, 2, figsize=(12, 5))  # Removed sharey=True
+# sharey=True causes problem
+# fig, axs = plt.subplots(1, 2, figsize=(12, 5), sharey=True)   
+
+# --- Absolute Frequency Histogram ---
+axs[0].hist(dataset, bins=bins, color="#00c4b0", edgecolor="white", linewidth=1.2, rwidth=1.0)
+axs[0].set_title("Absolute Frequency", fontsize=13, color="#007fff", pad=12)
+axs[0].set_xlabel("Value Ranges", fontsize=11)
+axs[0].set_ylabel("Count", fontsize=11)
+axs[0].grid(axis='y', linestyle='--', linewidth=0.6, alpha=0.7, color="#6d9bc3")
+for spine in axs[0].spines.values():
+    spine.set_visible(False)
+
+# --- Relative Frequency Histogram ---
+axs[1].hist(dataset, bins=bins, weights=[1./len(dataset)]*len(dataset), 
+            color="#ffa600", edgecolor="white", linewidth=1.2, rwidth=1.0)
+axs[1].set_title("Relative Frequency", fontsize=13, color="#ff7c00", pad=12)
+axs[1].set_xlabel("Value Ranges", fontsize=11)
+axs[1].set_ylabel("Proportion", fontsize=11)
+axs[1].grid(axis='y', linestyle='--', linewidth=0.6, alpha=0.7, color="#c98f3b")
+for spine in axs[1].spines.values():
+    spine.set_visible(False)
+
+plt.suptitle("Histogram Comparison: Absolute vs Relative Frequency", fontsize=15, color="#333", y=1.05)
+plt.tight_layout()
+plt.show()
