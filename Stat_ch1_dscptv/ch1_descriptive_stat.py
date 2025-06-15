@@ -209,6 +209,7 @@ plt.show()
 
 # ----------------------  Cross table and side by side bar chart  ----------------------
 
+# dataFrame making
 import pandas as pd
 
 # Original data
@@ -234,4 +235,151 @@ cross_table.loc["Total"] = cross_table.sum()
 print(cross_table)
 
 
-# 
+# Cross table (side by side investment comparison)
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data from cross table
+investments = data["Type of investment"]
+investor_a = data["Investor A"]
+investor_b = data["Investor B"]
+investor_c = data["Investor C"]
+
+# Bar width and x positions
+bar_width = 0.25
+x = np.arange(len(investments))
+
+# Create plot
+plt.figure(figsize=(9, 5))
+plt.bar(x - bar_width, investor_a, width=bar_width, label="Investor A", color="#1f77b4")
+plt.bar(x, investor_b, width=bar_width, label="Investor B", color="#ff7f0e")
+plt.bar(x + bar_width, investor_c, width=bar_width, label="Investor C", color="#2ca02c")
+
+# Labels and styling
+plt.xlabel("Type of Investment", fontsize=12)
+plt.ylabel("Investment Amount", fontsize=12)
+plt.title("Side-by-Side Investment Comparison", fontsize=14, color="#333")
+plt.xticks(x, investments, fontsize=11)
+plt.yticks(fontsize=10)
+plt.legend()
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+
+# Minimalist styling
+for spine in plt.gca().spines.values():
+    spine.set_visible(False)
+
+plt.tight_layout()
+plt.show()
+
+
+
+# cross table (investments per investor)
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data from cross table
+investments = data["Type of investment"]
+investor_a = data["Investor A"]
+investor_b = data["Investor B"]
+investor_c = data["Investor C"]
+
+# Transpose structure: group by investor
+x = np.arange(len(["Investor A", "Investor B", "Investor C"]))  # 3 investors
+bar_width = 0.25
+
+# Stack asset allocations per investor
+stocks = [investor_a[0], investor_b[0], investor_c[0]]
+bonds = [investor_a[1], investor_b[1], investor_c[1]]
+real_estate = [investor_a[2], investor_b[2], investor_c[2]]
+
+# Plot
+plt.figure(figsize=(9, 5))
+plt.bar(x - bar_width, stocks, width=bar_width, label="Stocks", color="#00c4b0")
+plt.bar(x, bonds, width=bar_width, label="Bonds", color="#ff2052")
+plt.bar(x + bar_width, real_estate, width=bar_width, label="Real Estate", color="#007fff")
+
+# Labels and styling
+plt.xlabel("Investor", fontsize=12)
+plt.ylabel("Investment Amount", fontsize=12)
+plt.title("Investment Allocation per Investor", fontsize=14, color="#333")
+plt.xticks(x, ["Investor A", "Investor B", "Investor C"], fontsize=11)
+plt.yticks(fontsize=10)
+plt.legend()
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+
+# Minimalist frame
+for spine in plt.gca().spines.values():
+    spine.set_visible(False)
+
+plt.tight_layout()
+plt.show()
+
+
+
+
+# ----------------------  Scatter plot for "SAT scores".  ----------------------
+
+# Data conversion to a csv file.
+import pandas as pd
+
+# Step 1: Define the data
+# (Student ID, Reading, Writing)
+data = [(1, 273,216),
+        # data from the table, in tuple form like this
+        (104, 549,521)]
+
+# Step 2: Create DataFrame
+df = pd.DataFrame(data, columns=["Student ID", "Reading", "Writing"])
+
+# Step 3: Save to CSV
+df.to_csv("SAT_scores.csv", index=False)
+
+# Step 4: Load back from CSV
+loaded_df = pd.read_csv("SAT_scores.csv")
+
+print(loaded_df)
+
+
+# Scatter plot (styled plot):
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load dataset
+df = pd.read_csv("ch1_data_SAT_scores.csv")
+
+# Modern font settings
+plt.rcParams["font.family"] = "DejaVu Sans"
+
+# Create the scatterplot
+plt.figure(figsize=(8, 5))
+plt.scatter(df["Reading"], df["Writing"], 
+            color="#89cff0", edgecolors='#318ce7', 
+            s=45, alpha=0.8)
+
+# Title and axis labels
+plt.title("Reading vs Writing Scores", fontsize=15, color="#54626f", pad=15)
+plt.xlabel("Reading Score", fontsize=12, color="#87a96b")
+plt.ylabel("Writing Score", fontsize=12, color="#87a96b")
+
+# Modern tick colors and font size
+plt.xticks(color="#54626f", fontsize=10)
+plt.yticks(color="#54626f", fontsize=10)
+
+# Grid and minimalist style
+plt.grid(True, linestyle='--', linewidth=0.5, alpha=0.6, color="#72a0c1")
+for spine in plt.gca().spines.values():
+    spine.set_visible(False)
+
+plt.tight_layout()
+
+# Save as SVG
+# plt.savefig("sat_scores_scatter_modern.svg", format="svg")
+
+# Optional: show the plot
+plt.show()
+
+
+
+
