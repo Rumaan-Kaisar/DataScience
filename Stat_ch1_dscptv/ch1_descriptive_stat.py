@@ -204,3 +204,34 @@ for spine in axs[1].spines.values():
 plt.suptitle("Histogram Comparison: Absolute vs Relative Frequency", fontsize=15, color="#333", y=1.05)
 plt.tight_layout()
 plt.show()
+
+
+
+# ----------------------  Cross table and side by side bar chart  ----------------------
+
+import pandas as pd
+
+# Original data
+data = {
+    "Type of investment": ["Stocks", "Bonds", "Real Estate"],
+    "Investor A": [96, 181, 88],
+    "Investor B": [185, 3, 152],
+    "Investor C": [39, 29, 142]
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Set index to make it look like a cross-table
+cross_table = df.set_index("Type of investment")
+
+# Add row totals
+cross_table["Total"] = cross_table.sum(axis=1)
+
+# Add column totals (including the new "Total" column)
+cross_table.loc["Total"] = cross_table.sum()
+
+print(cross_table)
+
+
+# 
